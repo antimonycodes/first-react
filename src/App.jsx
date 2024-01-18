@@ -20,10 +20,23 @@ function App() {
      <Card/>
      <Button/>
      <SectionOne/>
+     <PropsStudents name="Dave" age={30} isStudent={true} />
+     <PropsStudents name="Queen" age={20} isStudent={false}/>
+     <PropsStudents name="Mel" age={22} isStudent={false}/>
      <PropsStudents />
+     {/* sinnce we didnt pass any key-value above
+     its going to take the key-value of the
+     defualtProps */}
+     {/* if the data we are storing as a value is not a
+      string literal (e.g "Dave") we enclosed them in
+       a curly braces e.g (age={55}) */}
      {/* name = key 
+     Dave = value
       */}
-     {/* students - child  
+      {/* we send the key-value pair  from here {parent}
+      to child component {propsStudent}
+      the values are stored in props object  */}
+     {/* propsStudents - child  
      App - parent
      */}
 

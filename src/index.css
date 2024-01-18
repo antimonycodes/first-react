@@ -68,3 +68,11 @@ footer{
   height: 100%;
   padding: 4%;
 }
+
+.student{
+  font-size: 2em;
+  padding: 10px;
+  border: 1px solid grey;
+  display: inline-block;
+  margin: 3px;
+}
