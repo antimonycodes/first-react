@@ -1,11 +1,12 @@
-
+// import card component from location
 import Card from './card'
 import Navbar from './navbar'
 import Footer from './footer'
 import SectionOne from './sectionOne'
 import Button from './button/button'
 import PropsStudents from './propsStudents'
-// import card component from location
+import UserGreeting from './UserGreeting'
+
 
 function App() {
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <>
     <Navbar/>
-
+ <UserGreeting isLoggedIn={false} username="AntMan"/>
      <Card/>
      <Card/>
      <Card/>
@@ -23,10 +24,14 @@ function App() {
      <PropsStudents name="Dave" age={30} isStudent={true} />
      <PropsStudents name="Queen" age={20} isStudent={false}/>
      <PropsStudents name="Mel" age={22} isStudent={false}/>
+     {/*  */}
      <PropsStudents />
      {/* sinnce we didnt pass any key-value above
      its going to take the key-value of the
      defualtProps */}
+
+     {/*  */}
+
      {/* if the data we are storing as a value is not a
       string literal (e.g "Dave") we enclosed them in
        a curly braces e.g (age={55}) */}
@@ -39,6 +44,7 @@ function App() {
      {/* propsStudents - child  
      App - parent
      */}
+    
 
 
 
