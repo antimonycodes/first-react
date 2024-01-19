@@ -13,6 +13,7 @@ function PropsStudents(props) {
     <div className="student">
     <p>Name: {props.name}</p>
     <p>Age: {props.age}</p>
+     {/* Using ternary operator to display "Yes" or "No" based on the value of isStudent */}
     {/* with boolean its reconmmended to use ternary operator
     if true do this else do ths*/}
     {/* condition ? <expression if true> : <expression if false>  */}
@@ -28,14 +29,14 @@ function PropsStudents(props) {
 
   )
 }
-// setting up propTYpes
-PropsStudents.PropTypes ={
+// Setting up prop types to enforce data type validation for props
+PropsStudents.propTypes ={
   name: PropTypes.string,
   age: PropTypes.number,
   isStudent: PropTypes.bool,
 
 }
-// setting up default props
+// Setting up default props to provide default values if props are not provided
 PropsStudents.defaultProps ={
   name: "Guest",
   age: 0,

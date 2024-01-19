@@ -6,6 +6,7 @@ import SectionOne from './sectionOne'
 import Button from './button/button'
 import PropsStudents from './propsStudents'
 import UserGreeting from './UserGreeting'
+import List from './list'
 
 
 function App() {
@@ -47,7 +48,7 @@ function App() {
     
 
 
-
+<List/>
 <Footer/>
     </>
     // react components can only return a single element

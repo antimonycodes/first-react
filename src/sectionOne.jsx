@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 function SectionOne() {
   const food1 = "Pizza"
