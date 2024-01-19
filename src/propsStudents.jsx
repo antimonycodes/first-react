@@ -1,4 +1,4 @@
-import React from 'react'
+
 import PropTypes from 'prop-types';
 
 // the key-value pair we send from App{parent} are stored inside props here
