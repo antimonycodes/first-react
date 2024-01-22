@@ -78,6 +78,14 @@
   font-family: Tahoma;
 }
 /*  */
+.list-category{
+  font-size: 2.5em;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.384);
+  text-align: center;
+  border: 3px solid;
+}
+/*  */
 footer {
   background-color: pink;
   color: white;

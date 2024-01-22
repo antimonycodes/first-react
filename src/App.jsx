@@ -17,6 +17,13 @@ function App() {
   {id: 4, name: "coconut", calories: 354 }, 
   {id: 5,name: "pineapple", calories:37},
 ];
+     const vegetables= [
+  {id: 6, name: "potatoes", calories: 52 },
+  {id: 7, name: "carrots ", calories: 43 },
+  {id: 8, name: "broccoli", calories: 105 },
+  {id: 9, name: "cora", calories: 354 }, 
+  {id: 10,name: "pcelery", calories:37},
+];
 
 
   return (
@@ -56,6 +63,8 @@ function App() {
 
 
 <List items={fruits}  category="Fruits"/>
+<List items={vegetables}  category="Vegetables"/>
+
 <Footer/>
     </>
     // react components can only return a single element
