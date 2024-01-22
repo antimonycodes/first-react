@@ -10,6 +10,13 @@ import List from './list'
 
 
 function App() {
+     const fruits = [
+  {id: 1, name: "apple", calories: 52 },
+  {id: 2, name: "orange", calories: 43 },
+  {id: 3, name: "banana", calories: 105 },
+  {id: 4, name: "coconut", calories: 354 }, 
+  {id: 5,name: "pineapple", calories:37},
+];
 
 
   return (
@@ -48,7 +55,7 @@ function App() {
     
 
 
-<List/>
+<List items={fruits}  category="Fruits"/>
 <Footer/>
     </>
     // react components can only return a single element
