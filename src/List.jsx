@@ -10,7 +10,7 @@ function List(props) {
 // obJECT FILTERING
 // const lowCalFruits = fruits.filter(fruits =>fruits.calories <100 )
 // const highCalFruits = fruits.filter(fruits => fruits.calories >= 100)
-const category = props.category;
+const category = props.category
 const itemList = props.items;
   const listItems =  /*lowCalFruits */ itemList.map(item => <li key={item.id} 
                                        >{item.name}: &nbsp;
@@ -27,12 +27,14 @@ const itemList = props.items;
   )
 }
 
-// List.prototype ={
-//   category: PropTypes.string
-//   items: PropTypes.arrayOf{PropTypes.shape()}
-// }
+List.prototype ={
+  category: PropTypes.string,
+  items: PropTypes.arrayOf(PropTypes.shape({id: PropTypes.number,
+                                            name: PropTypes.string,
+                                            calories: PropTypes.number})),
+}
 List.defaultProps ={
-  category: "categort",
+  category: "category",
   items:[],
 }
 
