@@ -3,10 +3,11 @@ import Card from './card'
 import Navbar from './navbar'
 import Footer from './footer'
 import SectionOne from './sectionOne'
-import Button from './button/button'
+import Button from './clickEvent/button'
 import PropsStudents from './propsStudents'
 import UserGreeting from './UserGreeting'
 import List from './list'
+
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
      <Card/>
      <Card/>
      <Card/>
-     <Button/>
+     {/* <Button/> */}
      <SectionOne/>
      <PropsStudents name="Dave" age={30} isStudent={true} />
      <PropsStudents name="Queen" age={20} isStudent={false}/>
@@ -64,7 +65,7 @@ function App() {
 {/* conditional rendering */}
 {fruits.length > 0 ?<List items={fruits}  category="Fruits"/>: null}
 {vegetables.length > 0 && <List items={vegetables}  category="Vegetables"/>}
-
+<Button/>
 <Footer/>
     </>
     // react components can only return a single element

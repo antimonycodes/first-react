@@ -23,13 +23,15 @@ function Button() {
 //   background-color: red;
 // }
   }
+  const handleClick =()=> console.log("ouch..")
+  const handleClick2 =(name)=> console.log(`${name} stop`)
   return (
   <>
   {/* css module */}
   {/* <button className={styles.button}>Hire Me</button> */}
   {/* we use {} because its a dynamic value */}
   {/* inline css */}
-  <button style={styles}>Hire Me</button>
+  <button style={styles} onClick={()=>handleClick2("sb")}>Click me</button>
 
   </>
   )
