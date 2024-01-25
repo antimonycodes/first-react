@@ -6,10 +6,12 @@ import SectionOne from './sectionOne'
 import Button from './clickEvent/button'
 import PropsStudents from './propsStudents'
 import UserGreeting from './UserGreeting'
-import List from './list'
+import List from './List'
 import Btn from './clickEvent/Btn'
 import EventParam from './clickEvent/EventParam'
 import ProfilePicture from './clickEvent/ProfilePicture'
+import MyComponent from './MyComponent'
+
 
 
 
@@ -73,6 +75,7 @@ function App() {
 <EventParam/>
 <ProfilePicture/>
 <Footer/>
+<MyComponent/>
     </>
     // react components can only return a single element
     // but we can place children element inside the main element
