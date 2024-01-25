@@ -23,15 +23,25 @@ function Button() {
 //   background-color: red;
 // }
   }
+  let count = 0
+
+
+  //we dont need curly braces for one line arrow function
   const handleClick =()=> console.log("ouch..")
-  const handleClick2 =(name)=> console.log(`${name} stop`)
+  // a handleclick function with parameter
+  // const handleClick2 =(name)=> console.log(`${name} stop`)
   return (
   <>
   {/* css module */}
   {/* <button className={styles.button}>Hire Me</button> */}
   {/* we use {} because its a dynamic value */}
   {/* inline css */}
-  <button style={styles} onClick={()=>handleClick2("sb")}>Click me</button>
+    {/*we have to wrap the call back in afunction. if not
+  the function will run before we click the button  */}
+
+  {/* <button style={styles} onClick={()=>handleClick2("sb")}>Click me</button> */}
+  <button style={styles} onClick={()=>handleClick}>Click me</button>
+
 
   </>
   )

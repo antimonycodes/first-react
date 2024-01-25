@@ -7,6 +7,9 @@ import Button from './clickEvent/button'
 import PropsStudents from './propsStudents'
 import UserGreeting from './UserGreeting'
 import List from './list'
+import Btn from './clickEvent/Btn'
+import EventParam from './clickEvent/EventParam'
+import ProfilePicture from './clickEvent/ProfilePicture'
 
 
 
@@ -66,6 +69,9 @@ function App() {
 {fruits.length > 0 ?<List items={fruits}  category="Fruits"/>: null}
 {vegetables.length > 0 && <List items={vegetables}  category="Vegetables"/>}
 <Button/>
+<Btn/>
+<EventParam/>
+<ProfilePicture/>
 <Footer/>
     </>
     // react components can only return a single element
