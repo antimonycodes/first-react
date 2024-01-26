@@ -11,6 +11,7 @@ import Btn from './clickEvent/Btn'
 import EventParam from './clickEvent/EventParam'
 import ProfilePicture from './clickEvent/ProfilePicture'
 import MyComponent from './MyComponent'
+import Counter from './Counter'
 
 
 
@@ -76,6 +77,7 @@ function App() {
 <ProfilePicture/>
 <Footer/>
 <MyComponent/>
+<Counter/>
     </>
     // react components can only return a single element
     // but we can place children element inside the main element
